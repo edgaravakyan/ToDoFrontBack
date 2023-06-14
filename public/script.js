@@ -105,6 +105,7 @@ function toDoList() {
       toDos = resp;
       update()
    });
+   
 
    function sendTodos() {
       fetch('/todos', {
@@ -137,7 +138,6 @@ function toDoList() {
       }))
       main.appendChild(footer(toDos,(newToDos) => {
          toDos = newToDos;
-
          sendTodos();
          update()
       }))
